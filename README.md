@@ -187,7 +187,7 @@ An enhanced version with nested skip connections for improved gradient flow and 
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/industrial-defect-detection.git
+git clone https://github.com/godfreynjoro/industrial-defect-detection.git
 cd industrial-defect-detection
 ```
 
@@ -519,9 +519,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Godfrey Wamwere**
 
-- GitHub: [@godfreywamwere](https://github.com/yourusername)
-- LinkedIn: [Godfrey Wamwere](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@godfreywamwere](https://github.com/godfreynjoro)
+- LinkedIn: [Godfrey Wamwere](www.linkedin.com/in/godfrey-njoroge-637b9274)
+- Email: godfreynjorogewamwere@gmail.com
 
 ## 🙏 Acknowledgments
 
