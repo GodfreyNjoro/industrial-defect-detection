@@ -1,0 +1,42 @@
+# Configuration file for Industrial Defect Detection
+
+# Data configuration
+data:
+  root_dir: "data/raw/mvtec_ad"  # Path to MVTec AD dataset
+  category: "bottle"               # Product category (bottle, cable, capsule, etc.)
+  image_size: [256, 256]          # Target image size [height, width]
+  num_workers: 4                   # Number of data loading workers
+
+# Model configuration
+model:
+  architecture: "unet"             # Model architecture: "unet" or "unetplusplus"
+  base_channels: 64                # Number of channels in first layer
+  bilinear: true                   # Use bilinear upsampling (true) or transposed conv (false)
+
+# Training configuration
+training:
+  epochs: 100                      # Number of training epochs
+  batch_size: 16                   # Batch size
+  learning_rate: 0.001             # Initial learning rate
+  weight_decay: 0.0001             # L2 regularization factor
+  
+  # Loss function weights
+  bce_weight: 0.5                  # Weight for Binary Cross-Entropy loss
+  dice_weight: 0.5                 # Weight for Dice loss
+  
+  # Training behavior
+  early_stopping_patience: 15      # Stop if no improvement for N epochs
+  save_frequency: 10               # Save checkpoint every N epochs
+  seed: 42                         # Random seed for reproducibility
+
+# Paths
+paths:
+  results_dir: "results"           # Directory to save results
+  checkpoint_dir: "results/checkpoints"  # Directory for model checkpoints
+  log_dir: "results/logs"          # Directory for logs
+  vis_dir: "results/visualizations"  # Directory for visualizations
+
+# Inference configuration
+inference:
+  threshold: 0.5                   # Threshold for binarizing predictions
+  batch_size: 8                    # Batch size for inference
