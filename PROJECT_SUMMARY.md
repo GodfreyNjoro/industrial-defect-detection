@@ -11,7 +11,7 @@ This is a **professional-grade computer vision project** for detecting and segme
 - Modular design for easy maintenance and extension
 - Professional directory structure following best practices
 
-### 2. **State-of-the-Art Models**
+### 2. **Segmentation Model Architectures**
 - **U-Net**: Classic architecture with skip connections (~31M parameters)
 - **U-Net++**: Enhanced version with nested skip pathways
 - Both models implemented from scratch with PyTorch

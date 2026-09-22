@@ -10,7 +10,7 @@ A professional deep learning project for detecting and segmenting surface defect
 
 ## 🎯 Project Overview
 
-This project addresses the critical challenge of automated quality control in manufacturing by detecting and precisely segmenting surface defects using state-of-the-art deep learning techniques. The system can identify various types of defects including scratches, dents, contamination, and other surface anomalies.
+This project addresses automated quality control in manufacturing by detecting and pixel-wise segmenting surface defects with U-Net and U-Net++ convolutional networks. The system identifies defects such as scratches, dents, contamination, and other surface anomalies across the MVTec AD dataset's 15 categories.
 
 ### Key Features
 
